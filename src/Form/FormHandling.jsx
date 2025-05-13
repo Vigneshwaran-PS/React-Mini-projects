@@ -104,30 +104,31 @@ const FormHandling = () => {
 
   return (
     <div className='form-container'>
+        <h1>Employee Details</h1>
         <div className='form-wrapper'>
-            <h1>Employee Details</h1>
-
             <div className="emp-details">
-                    <div className="fullname">
-                        <p>Full name:</p>
-                        <input type="text" 
-                                value={data.fullname}
-                                name='fullname'
-                                onChange={handleChange}
-                        />
-                        {error.nameError && <p className='error'>please enter name</p>}
-                    </div>
+                    <div className="emp-name-phone">
+                        <div className="fullname">
+                            <p>Full name:</p>
+                            <input type="text" 
+                                    value={data.fullname}
+                                    name='fullname'
+                                    onChange={handleChange}
+                            />
+                            {error.nameError && <p className='error'>please enter name</p>}
+                        </div>
 
-                    <div className="phone">
-                        <p>Phone no:</p>
-                        <input type="text" 
-                                value={data.phone}
-                                name='phone'
-                                onChange={handleChange}
-                        />
-                        {error.phoneError && <p className='error'>please enter phone no</p>}
+                        <div className="phone">
+                            <p>Phone no:</p>
+                            <input type="text" 
+                                    value={data.phone}
+                                    name='phone'
+                                    onChange={handleChange}
+                            />
+                            {error.phoneError && <p className='error'>please enter phone no</p>}
+                        </div>
                     </div>
-
+                    
                     <div className="dob">
                         <div>Date of Birth:</div>
                         <input type="date" 
