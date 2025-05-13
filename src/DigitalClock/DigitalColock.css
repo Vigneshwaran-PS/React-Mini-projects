@@ -1,0 +1,26 @@
+.clock-wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2A7B9B;
+    background: linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+    border-radius: 10px;
+}
+
+.clock-wrapper .cloak {
+    padding: 20px;
+}
+
+.cloak h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+.cloak .time{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 100px;
+    color: #3F5EFB;
+}

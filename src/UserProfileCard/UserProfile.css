@@ -1,0 +1,149 @@
+.user-pro-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.user-pro-wrapper{
+    width: 95%;
+}
+
+.user-pro-wrapper h1{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 50px;
+    color: #FE7743;
+    text-align: center;
+}
+
+.user-pro-container .user-pro-wrapper .cards{
+    margin-top: 20px;
+    height: 90%;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    padding: 10px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    flex-direction: row; 
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.user-container{
+    border: 1px solid rgb(201, 201, 201);
+    flex: 1;
+    min-width: 300px;
+    min-height: 500px;
+    background-color: rgb(60, 58, 58);
+    border-radius: 10px;
+}
+
+.user-container .user-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.user-container .user-wrapper .user-content{
+}
+
+.user-container .user-wrapper picture {
+    width: 100%;       /* or whatever fixed size you need */
+    height: 150px;
+    display: inline-block;  /* ensures it respects width/height */
+    text-align: center;
+}
+  
+.user-container .user-wrapper picture img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.user-container .user-wrapper h3{
+    margin-top: 10px;
+    margin-left: 10px;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.user-container .user-wrapper .user-name{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user-container .user-wrapper .user-city{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user-container .user-wrapper .user-role{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.user-container .user-wrapper .buttons{
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-container .user-wrapper .buttons button{
+    width: 40%;
+    font-size: 18px;
+    height: 40px;
+}
+
+.user-container .user-wrapper .buttons .msg{
+    background-color: rgb(32, 161, 241);
+    border: none;
+    color: white;
+}
+
+.user-container .user-wrapper .buttons .follow{
+    border: 1px solid rgb(32, 161, 241);
+    background-color: black;
+    color: white;
+}
+
+
+.user-container .user-wrapper .skills{
+    padding: 10px;
+    min-height: 100px;
+    max-height: 100px;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+.user-container .user-wrapper .skills ul{
+    overflow-y: scroll;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.user-container .user-wrapper .skills ul li{
+    font-size: 14px;
+    border: 1px solid rgb(72, 72, 72);
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(255,255,255,0.1);
+}

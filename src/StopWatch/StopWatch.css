@@ -1,0 +1,60 @@
+.stopwatch-wrapper{
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.stopwatch-wrapper h1{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.stopwatch-wrapper .stop-watch-time{
+    font-size: 100px;
+}
+
+.stopwatch-wrapper .stop-watch-time {
+    background: linear-gradient(270deg, #ff6ec4, #7873f5, #42e695, #ff6ec4);
+    background-size: 800% 800%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientMove 8s ease infinite;
+  }
+  
+  @keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+.stop-watch-button{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.stop-watch-button button{
+    width: 10%;
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    border-radius: 10px;
+    border: none;
+    background: #459973;
+    background: linear-gradient(90deg,rgba(69, 153, 115, 1) 0%, rgba(21, 211, 232, 1) 35%, rgba(0, 255, 212, 1) 100%);
+    transition: background 0.9s ease-in-out;
+}
+
+.stop-watch-button button:hover {
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgb(98, 216, 173) 100%);
+}

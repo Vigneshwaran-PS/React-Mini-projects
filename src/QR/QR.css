@@ -1,0 +1,99 @@
+.qr-container{
+    margin-top: 40px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.qr-container h1{
+    margin-bottom: 100px;
+    color: #078abd;
+}
+
+.qr-container .qr-content{
+    width: 50%;
+    padding: 10px;
+}
+
+.qr-container .qr-content .data{
+    text-align: left;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+
+.qr-container .qr-content .data h5{
+    font-size: 16px;
+}
+
+.qr-container .qr-content .data input{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+
+.qr-container .qr-content .data p{
+    font-size: 12px;
+    margin-top: 5px;
+    color: red;
+}
+
+
+.qr-container .qr-content .size{
+    text-align: left;
+    padding: 10px;
+    margin-left: 10px;
+}
+
+.qr-container .qr-content .size h5{
+    font-size: 16px;
+}
+
+.qr-container .qr-content .size input{
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.qr-container .qr-content .size p{
+    font-size: 12px;
+    margin-top: 5px;
+    color: red;
+}
+
+
+.qr-container .qr-content .buttons{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+.qr-container .qr-content .buttons button{
+    font-size: 18px;
+    padding: 15px;
+    color: white;
+    border-radius: 5px;
+}
+
+.qr-container .qr-content .buttons .generate{
+        background-color: #2A7B9B;
+        border: none;
+}
+
+.qr-container .qr-content .buttons .download{
+    background-color: green;
+    border: none;
+}
+
