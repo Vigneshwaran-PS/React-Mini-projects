@@ -16,6 +16,8 @@ import GetAdvice from "../GetAdvice/GetAdvice";
 import WeatherApp from "../Weather/WeatherApp";
 import BMICalculator from '../BMI/BMICalculator';
 import CurrencyConv from "../CurrenyConverter/CurrencyConv";
+import StrongPassGenerator from "../PasswordGenerator/StrongPassGenerator";
+import Faq from "../FAQ/Faq";
 
 const ContentPage = () => {
     return (
@@ -38,6 +40,8 @@ const ContentPage = () => {
             <Route path="/weather"  element={<WeatherApp/>}/>
             <Route path="/bmi"  element={<BMICalculator/>}/>
             <Route path="/currency"  element={<CurrencyConv/>}/>
+            <Route path="/pass" element={<StrongPassGenerator/>}/>
+            <Route path="/faq" element={<Faq/>}/>
           </Routes>
         </div>
       </div>

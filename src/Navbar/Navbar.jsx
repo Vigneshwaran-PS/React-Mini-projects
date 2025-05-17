@@ -24,6 +24,8 @@ const NavBar = () => {
                         <li><NavLink to="/weather" className={({ isActive }) => isActive ? 'active' : ''}>13. Weather App</NavLink></li>
                         <li><NavLink to="/bmi" className={({ isActive }) => isActive ? 'active' : ''}>14. BMI Calculator</NavLink></li>
                         <li><NavLink to="/currency" className={({ isActive }) => isActive ? 'active' : ''}>15. Currency converter</NavLink></li>
+                        <li><NavLink to="/pass" className={({ isActive }) => isActive ? 'active' : ''}>16. Password Generator</NavLink></li>
+                        <li><NavLink to="/faq" className={({ isActive }) => isActive ? 'active' : ''}>17. FAQ</NavLink></li>
                     </ul>
                 </div>
             </div>
