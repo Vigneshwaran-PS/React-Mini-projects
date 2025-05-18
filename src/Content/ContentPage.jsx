@@ -18,6 +18,7 @@ import BMICalculator from '../BMI/BMICalculator';
 import CurrencyConv from "../CurrenyConverter/CurrencyConv";
 import StrongPassGenerator from "../PasswordGenerator/StrongPassGenerator";
 import Faq from "../FAQ/Faq";
+import Calender from "../Calender/Calender";
 
 const ContentPage = () => {
     return (
@@ -42,6 +43,7 @@ const ContentPage = () => {
             <Route path="/currency"  element={<CurrencyConv/>}/>
             <Route path="/pass" element={<StrongPassGenerator/>}/>
             <Route path="/faq" element={<Faq/>}/>
+            <Route path="/calender" element={<Calender/>}/>
           </Routes>
         </div>
       </div>

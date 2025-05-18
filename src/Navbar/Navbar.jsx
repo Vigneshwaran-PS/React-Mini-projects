@@ -26,6 +26,7 @@ const NavBar = () => {
                         <li><NavLink to="/currency" className={({ isActive }) => isActive ? 'active' : ''}>15. Currency converter</NavLink></li>
                         <li><NavLink to="/pass" className={({ isActive }) => isActive ? 'active' : ''}>16. Password Generator</NavLink></li>
                         <li><NavLink to="/faq" className={({ isActive }) => isActive ? 'active' : ''}>17. FAQ</NavLink></li>
+                        <li><NavLink to="/calender" className={({ isActive }) => isActive ? 'active' : ''}>18. Calender</NavLink></li>
                     </ul>
                 </div>
             </div>

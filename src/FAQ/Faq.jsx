@@ -4,7 +4,7 @@ import './Faq.css'
 
 const FaqItem = ({item}) => {
 
-    const [showAns,setShowAns]= useState(true)
+    const [showAns,setShowAns]= useState(false)
     return(
         <div className="faq-item">
             <div className="faq-que" onClick={() => setShowAns(prev => !prev)}>
