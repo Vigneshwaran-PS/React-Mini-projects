@@ -1,7 +1,7 @@
 .products-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
     gap: 20px;
     overflow-y: scroll;
 }
