@@ -27,6 +27,7 @@ const NavBar = () => {
                         <li><NavLink to="/pass" className={({ isActive }) => isActive ? 'active' : ''}>16. Password Generator</NavLink></li>
                         <li><NavLink to="/faq" className={({ isActive }) => isActive ? 'active' : ''}>17. FAQ</NavLink></li>
                         <li><NavLink to="/calender" className={({ isActive }) => isActive ? 'active' : ''}>18. Calender</NavLink></li>
+                        <li><NavLink to="/queAndAns" className={({ isActive }) => isActive ? 'active' : ''}>19. Que And Ans</NavLink></li>
                     </ul>
                 </div>
             </div>

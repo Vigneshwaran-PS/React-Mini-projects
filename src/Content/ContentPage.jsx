@@ -19,6 +19,7 @@ import CurrencyConv from "../CurrenyConverter/CurrencyConv";
 import StrongPassGenerator from "../PasswordGenerator/StrongPassGenerator";
 import Faq from "../FAQ/Faq";
 import Calender from "../Calender/Calender";
+import QueAndAns from "../QueAndAns/QueAndAns";
 
 const ContentPage = () => {
     return (
@@ -44,6 +45,7 @@ const ContentPage = () => {
             <Route path="/pass" element={<StrongPassGenerator/>}/>
             <Route path="/faq" element={<Faq/>}/>
             <Route path="/calender" element={<Calender/>}/>
+            <Route path="/queAndAns" element={<QueAndAns/>}/>
           </Routes>
         </div>
       </div>
