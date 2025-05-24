@@ -18,6 +18,10 @@ const Cart = ({cart,setCart}) => {
 
     },[cart])   
 
+    function clearCart(){
+        setCart([])
+    }
+
   return (
     <div className='cart-container'>
 
@@ -46,6 +50,17 @@ const Cart = ({cart,setCart}) => {
                     ))
             }
         </div>
+       
+        {cart.length > 0 && (
+            <div className="tool-tip">
+                <p>Remove all Items!</p>
+                <div className='clear-cart'>
+                    <button onClick={clearCart} className='clear-button'>x</button>
+                </div>
+                
+            </div>
+        )}
+
        
     </div>
   )
