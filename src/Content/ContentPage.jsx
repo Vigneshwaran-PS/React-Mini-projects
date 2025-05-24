@@ -20,6 +20,7 @@ import StrongPassGenerator from "../PasswordGenerator/StrongPassGenerator";
 import Faq from "../FAQ/Faq";
 import Calender from "../Calender/Calender";
 import QueAndAns from "../QueAndAns/QueAndAns";
+import ShoppingMain from "../Shopingcart/ShoppingMain";
 
 const ContentPage = () => {
     return (
@@ -46,6 +47,7 @@ const ContentPage = () => {
             <Route path="/faq" element={<Faq/>}/>
             <Route path="/calender" element={<Calender/>}/>
             <Route path="/queAndAns" element={<QueAndAns/>}/>
+            <Route path="/shop/*" element={<ShoppingMain/>}/>
           </Routes>
         </div>
       </div>

@@ -28,6 +28,7 @@ const NavBar = () => {
                         <li><NavLink to="/faq" className={({ isActive }) => isActive ? 'active' : ''}>17. FAQ</NavLink></li>
                         <li><NavLink to="/calender" className={({ isActive }) => isActive ? 'active' : ''}>18. Calender</NavLink></li>
                         <li><NavLink to="/queAndAns" className={({ isActive }) => isActive ? 'active' : ''}>19. Que And Ans</NavLink></li>
+                        <li><NavLink to="/shop" className={({ isActive }) => isActive ? 'active' : ''}>20. Shopping</NavLink></li>
                     </ul>
                 </div>
             </div>

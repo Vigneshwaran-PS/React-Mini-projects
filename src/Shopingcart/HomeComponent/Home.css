@@ -1,0 +1,14 @@
+.products-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
+    gap: 20px;
+    overflow-y: scroll;
+}
+
+
+.cart-item-count{
+    border-radius: 50%;
+    background-color: green;
+    padding: 5px 10px;
+}
