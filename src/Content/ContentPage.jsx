@@ -21,6 +21,7 @@ import Faq from "../FAQ/Faq";
 import Calender from "../Calender/Calender";
 import QueAndAns from "../QueAndAns/QueAndAns";
 import ShoppingMain from "../Shopingcart/ShoppingMain";
+import Todo from "../Todo/Todo";
 
 const ContentPage = () => {
     return (
@@ -48,6 +49,7 @@ const ContentPage = () => {
             <Route path="/calender" element={<Calender/>}/>
             <Route path="/queAndAns" element={<QueAndAns/>}/>
             <Route path="/shop/*" element={<ShoppingMain/>}/>
+            <Route path="/todo" element={<Todo/>}/>
           </Routes>
         </div>
       </div>
