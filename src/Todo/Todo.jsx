@@ -12,7 +12,7 @@ function reduce(state,action){
     switch(action.type){
         default:
             return state;
-        case 'HADLE_INPUT':
+        case 'HANDLE_INPUT':
             return {...state,newTodo : action.payload}
         case 'ADD_TASK':
             if (!state.newTodo?.trim()) {
@@ -22,6 +22,8 @@ function reduce(state,action){
                 id: Math.floor(Math.random() * 1000),
                 name: state.newTodo.trim()
             };
+            let todos = [...state.todos,newTask]
+            localStorage.setItem('todos',JSON.stringify(todos))
             return {
                 ...state,
                 todos: [...state.todos,newTask],
@@ -29,6 +31,8 @@ function reduce(state,action){
             }
         case 'REMOVE_TASK':
             let newTodos = state.todos.filter(todo => todo.id !== action.payload)
+            localStorage.setItem('todos',JSON.stringify(newTodos))
+            console.log(localStorage.getItem('todos'))
             return {
                 ...state,
                 todos : [...newTodos]
@@ -36,9 +40,20 @@ function reduce(state,action){
     }
 }
 
+function init() {
+    const stored = localStorage.getItem('todos');
+    if (stored) {
+      return {
+        newTodo: '',
+        todos: JSON.parse(stored),
+      };
+    }
+    return initialState;
+  }
+
 const Todo = () => {
 
-    const [state,dispatch] = useReducer(reduce,initialState)
+    const [state,dispatch] = useReducer(reduce,initialState,init)
 
     function addTask(e){
         dispatch({type:'ADD_TASK'})     
@@ -62,7 +77,7 @@ const Todo = () => {
             <div className="add-todo">
                 <input type="text" 
                         placeholder='Enter you tasks...'
-                        onChange={(e)=>dispatch({type:'HADLE_INPUT',payload:e.target.value})}
+                        onChange={(e)=>dispatch({type:'HANDLE_INPUT',payload:e.target.value})}
                         value={state.newTodo}
                         onKeyDown={handleKeyDown}
                 />
