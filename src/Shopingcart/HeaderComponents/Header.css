@@ -20,6 +20,34 @@
     border-top-left-radius: 10px;
 }
 
+.search-bar{
+    min-width: 700px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding-left: 4px;
+    padding-right: 10px;
+}
+
+.search-field{
+    flex: 1;
+    border: none;
+    outline: none;
+    height: auto;
+    font-size: 1.2rem;
+    padding: 6px;
+    overflow: none;
+}
+
+.search-bar img{
+    width: 20px;
+    height: 20px;
+}
+
+
 
 .logo{
     color: white;
@@ -44,3 +72,4 @@
 .cart-item-count{
     margin-right: 1rem;
 }
+

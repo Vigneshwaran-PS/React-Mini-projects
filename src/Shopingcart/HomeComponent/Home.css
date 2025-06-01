@@ -1,8 +1,9 @@
 .products-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,auto));
+    grid-template-columns: repeat(auto-fill,minmax(250px,auto));
     gap: 20px;
+    grid-auto-flow: row;
     overflow-y: scroll;
 }
 
@@ -11,4 +12,20 @@
     border-radius: 50%;
     background-color: green;
     padding: 5px 10px;
+}
+
+.products-container .loading{
+    font-size: 20px;
+    color: #3efbde;
+    position: absolute;
+    top: 42%;
+    left: 40%;
+}
+
+.products-container .not-found{
+    color: #3efbde;
+    font-size: 20px;
+    position: absolute;
+    top: 42%;
+    left: 43%;
 }
