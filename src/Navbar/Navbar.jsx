@@ -31,6 +31,7 @@ const NavBar = () => {
                         <li><NavLink to="/shop" className={({ isActive }) => isActive ? 'active' : ''}>20. Shopping</NavLink></li>
                         <li><NavLink to="/todo" className={({ isActive }) => isActive ? 'active' : ''}>21. Todo</NavLink></li>
                         <li><NavLink to="/notification" className={({ isActive }) => isActive ? 'active' : ''}>22. Notification</NavLink></li>
+                        <li><NavLink to="/toggle" className={({isActive}) => isActive ? 'active' : ''}>23. Toggle Progress</NavLink></li>
                     </ul>
                 </div>
             </div>

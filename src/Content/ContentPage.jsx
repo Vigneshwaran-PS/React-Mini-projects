@@ -23,6 +23,7 @@ import QueAndAns from "../QueAndAns/QueAndAns";
 import ShoppingMain from "../Shopingcart/ShoppingMain";
 import Todo from "../Todo/Todo";
 import Notification from "../Notification/Notification";
+import Toggle from "../ToggleProgress/Toggle";
 
 const ContentPage = () => {
     return (
@@ -52,6 +53,7 @@ const ContentPage = () => {
             <Route path="/shop/*" element={<ShoppingMain/>}/>
             <Route path="/todo" element={<Todo/>}/>
             <Route path="/notification" element={<Notification/>}/>
+            <Route path="/toggle" element={<Toggle/>}/>
           </Routes>
         </div>
       </div>
