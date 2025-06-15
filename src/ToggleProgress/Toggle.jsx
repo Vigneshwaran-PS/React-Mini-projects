@@ -11,12 +11,13 @@ const Toggle = () => {
     progressRef.current = 0;
 
     const interval = setInterval(() => {
+        
       if (progressRef.current >= 100) {
         clearInterval(interval);
         return;
       }
 
-      progressRef.current += 10;
+      progressRef.current += 5;
 
       if (barRef.current) {
         barRef.current.style.transform = `translateX(${progressRef.current - 100}%)`;
